@@ -6,7 +6,7 @@ background: linear-gradient(to right, rgb(32, 40, 85), rgb(175, 64, 57));
 
 @font-face {
 	font-family:"SEGA LOGO FONT";
-	src:url("SEGA.woff") format("woff");
+	src: local("SEGA LOGO FONT"), url("SEGA.woff") format("woff");
 	font-weight:bold;
 	font-style:normal;
 }

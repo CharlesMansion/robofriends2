@@ -3,42 +3,46 @@ import Cardlist from '../components/Cardlist';
 import './App.css' ;
 import Searchbox from '../components/Searchbox';
 import Scroll from '../components/Scroll';
+import { connect } from 'react-redux';
+import { setSearchfield, requestRobots } from '../actions';
 import ErrorBoundary from '../components/ErrorBoundary'
 
+const mapStateToProps = (state) => {
+  return {
+    searchfield: state.searchRobots.searchfield,
+    robots : state.requestRobots.robots,
+    isPending : state.requestRobots.isPending,
+    error : state.requestRobots.error
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSearchChange: (event) => dispatch(setSearchfield(event.target.value)),
+    onRequestRobots: () => dispatch(requestRobots())
+  }
+}
+
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      robots: [],
-      searchfield: ''
-    }
-  };
-
+  
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(users => { return users.json()})
-    .then(users => {
-      this.setState({robots:users})
-    })
+    this.props.onRequestRobots()
   };
 
-  onSearchChange = (event) => {
-    this.setState({searchfield:event.target.value})
-  };
 
   render() {
-    const { robots, searchfield } = this.state;
+    const { searchfield, onSearchChange, robots, isPending } = this.props;
     const filteredRobots = robots.filter(robot => {
        return robot.name.toLowerCase().includes(searchfield.toLowerCase())
      })
 
-    return !robots.length ? 
+    return isPending ? 
         <h1 className='gold tc'>Loading...</h1>
       :
          (
         <div className='tc'>
        <h1 className='f1 gold grow'>Robofriends</h1>
-         <Searchbox searchChange={this.onSearchChange} />
+         <Searchbox searchChange={onSearchChange} />
          <Scroll>
           <ErrorBoundary>
             <Cardlist robots={filteredRobots}/> 
@@ -50,4 +54,4 @@ class App extends Component {
 }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
