@@ -11,6 +11,11 @@
       "src": "android-chrome-512x512.png",
       "sizes": "512x512 144x144",
       "type": "png"
+    },
+    {
+      "src": "r2d2-144.png",
+      "sizes": "144x144",
+      "type": "png"
     }
   ],
   "start_url": "./index.html",
