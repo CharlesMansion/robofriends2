@@ -11,9 +11,9 @@ import ErrorBoundary from '../components/ErrorBoundary'
 const mapStateToProps = (state) => {
   return {
     searchfield: state.searchRobots.searchfield,
-    robots : state.requestRobots.robots,
-    isPending : state.requestRobots.isPending,
-    error : state.requestRobots.error
+    robots : state.requetRobots.robots,
+    isPending : state.requetRobots.isPending,
+    error : state.requetRobots.error
   }
 }
 
@@ -25,7 +25,7 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 class App extends Component {
-  
+   
   componentDidMount() {
     this.props.onRequestRobots()
   };

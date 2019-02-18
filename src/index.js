@@ -7,10 +7,10 @@ import { createLogger } from 'redux-logger';
 import './index.css';
 import 'tachyons';
 import App from './containers/App';
-import { searchRobots, requestRobots } from './reducers';
+import { searchRobots, requetRobots } from './reducers';
 import registerServiceWorker from './registerServiceWorker';
 
-const rootreducer = combineReducers({ searchRobots, requestRobots})
+const rootreducer = combineReducers({ searchRobots, requetRobots})
 const logger = createLogger();
 const store = createStore(rootreducer, applyMiddleware(thunkMiddleware, logger));
 
