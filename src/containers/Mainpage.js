@@ -12,12 +12,14 @@ class Mainpage extends Component {
     this.props.onRequestRobots()
   };
 
-  render() {
-    const { searchfield, onSearchChange, robots, isPending } = this.props;
-    const filteredRobots = robots.filter(robot => {
-       return robot.name.toLowerCase().includes(searchfield.toLowerCase())
+  filteredRobots = (robots) => {
+    return robots.filter(robot => {
+       return robot.name.toLowerCase().includes(this.props.searchfield.toLowerCase())
      })
+     }
 
+  render() {
+    const {onSearchChange, robots, isPending } = this.props;
     return ( 
       <div className='tc'>
       <Header/>
@@ -25,7 +27,7 @@ class Mainpage extends Component {
       <Scroll>
       { isPending ? <h1 className='gold tc'>Loading...</h1> :
           <ErrorBoundary>
-            <Cardlist robots={filteredRobots}/> 
+            <Cardlist robots={this.filteredRobots(robots)}/> 
           </ErrorBoundary>
         }
         </Scroll>

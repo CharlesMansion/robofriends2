@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/components/CounterButton.js</title>
+    <title>Code coverage report for src/containers/Mainpage.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">All files</a> / <a href="index.html">src/components</a> CounterButton.js
+      <a href="../../index.html">All files</a> / <a href="index.html">src/containers</a> Mainpage.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">87.5% </span>
+        <span class="strong">80% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>7/8</span>
+        <span class='fraction'>4/5</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">50% </span>
@@ -30,14 +30,14 @@
         <span class='fraction'>1/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">75% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>5/5</span>
+        <span class='fraction'>3/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">85.71% </span>
+        <span class="strong">80% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/7</span>
+        <span class='fraction'>4/5</span>
       </div>
     </div>
   </div>
@@ -73,21 +73,24 @@
 28
 29
 30
-31</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -95,45 +98,72 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, {Component} from 'react';
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import Cardlist from '../components/Cardlist';
+import './Mainpage.css' ;
+import Header from '../components/Header';
+import Searchbox from '../components/Searchbox';
+import Scroll from '../components/Scroll';
+import ErrorBoundary from '../components/ErrorBoundary'
 &nbsp;
-class CounterButton extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0
-    };
-  }
+class Mainpage extends Component {
+   
+  componentDidMount() {
+    this.props.onRequestRobots()
+  };
 &nbsp;
-  shouldComponentUpdate(nextProps, nextState) {
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (this.state.count !== nextState.count) {
-      return true;
-    }
-<span class="cstat-no" title="statement not covered" >    return false;</span>
-  }
+  filteredRobots = (robots) =&gt; {
+    return robots.filter(<span class="fstat-no" title="function not covered" >ro</span>bot =&gt; {
+<span class="cstat-no" title="statement not covered" >       return robot.name.toLowerCase().includes(this.props.searchfield.toLowerCase())</span>
+     })
+     }
 &nbsp;
   render() {
-    return (
-      &lt;button 
-        className='ma3 pa2 f4 black bg-navy yellow shadow-5 dib br3'
-        id='counter'
-        color={this.props.color}
-        onClick={() =&gt; this.setState(state =&gt; ({count: state.count + 1}))}&gt;
-        Robot-o-meter : {this.state.count} 
-      &lt;/button&gt;
+    const {onSearchChange, robots, isPending } = this.props;
+    return ( 
+      &lt;div className='tc'&gt;
+      &lt;Header/&gt;
+      &lt;Searchbox searchChange={onSearchChange} /&gt;
+      &lt;Scroll&gt;
+      { isPending ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;h1 className='gold tc'&gt;Loading...&lt;/h1&gt; </span>:
+          &lt;ErrorBoundary&gt;
+            &lt;Cardlist robots={this.filteredRobots(robots)}/&gt; 
+          &lt;/ErrorBoundary&gt;
+        }
+        &lt;/Scroll&gt;
+     &lt;/div&gt;
     );
-  }
+&nbsp;
+}
 }
 &nbsp;
-export default CounterButton</pre></td></tr>
+export default Mainpage;
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
