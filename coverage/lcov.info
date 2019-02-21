@@ -1,5 +1,5 @@
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/Scroll.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/Scroll.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:0
@@ -13,7 +13,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/actions.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/actions.js
 FN:6,(anonymous_0)
 FN:11,(anonymous_1)
 FN:11,(anonymous_2)
@@ -42,7 +42,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/constants.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/constants.js
 FNF:0
 FNH:0
 DA:1,0
@@ -55,7 +55,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/index.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/index.js
 FNF:0
 FNH:0
 DA:1,0
@@ -80,7 +80,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/reducers.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/reducers.js
 FN:10,(anonymous_0)
 FN:25,(anonymous_1)
 FNF:2
@@ -116,7 +116,7 @@ BRF:10
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/registerServiceWorker.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/registerServiceWorker.js
 FN:21,register
 FN:32,(anonymous_1)
 FN:41,(anonymous_2)
@@ -207,7 +207,7 @@ BRF:21
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/setupTests.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/setupTests.js
 FNF:0
 FNH:0
 DA:4,3
@@ -217,7 +217,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/components/Card.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Card.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:1
@@ -230,7 +230,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/components/Cardlist.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Cardlist.js
 FN:5,(anonymous_0)
 FN:9,(anonymous_1)
 FNF:2
@@ -246,7 +246,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/components/CounterButton.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/CounterButton.js
 FN:4,(anonymous_0)
 FN:11,(anonymous_1)
 FN:18,(anonymous_2)
@@ -274,7 +274,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/components/ErrorBoundary.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/ErrorBoundary.js
 FN:5,(anonymous_0)
 FN:12,(anonymous_1)
 FN:15,(anonymous_2)
@@ -296,7 +296,7 @@ BRF:2
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/components/Header.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Header.js
 FN:10,(anonymous_0)
 FN:13,(anonymous_1)
 FNF:2
@@ -313,7 +313,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/components/Scroll.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Scroll.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:0
@@ -327,7 +327,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/components/Searchbox.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Searchbox.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:0
@@ -341,7 +341,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/nicolasnollomont/Desktop/DEV/robofriends2/src/containers/App.js
+SF:/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/containers/App.js
 FN:11,(anonymous_0)
 FN:20,(anonymous_1)
 FN:22,(anonymous_2)
