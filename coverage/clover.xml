@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1550763580639" clover="3.2.0">
-  <project timestamp="1550763580639" name="All files">
-    <metrics statements="114" coveredstatements="18" conditionals="37" coveredconditionals="2" methods="48" coveredmethods="11" elements="199" coveredelements="31" complexity="0" loc="114" ncloc="114" packages="3" files="16" classes="16">
+<coverage generated="1551194492347" clover="3.2.0">
+  <project timestamp="1551194492348" name="All files">
+    <metrics statements="110" coveredstatements="42" conditionals="37" coveredconditionals="12" methods="47" coveredmethods="20" elements="194" coveredelements="74" complexity="0" loc="110" ncloc="110" packages="3" files="15" classes="15">
       <package name="src">
-        <metrics statements="76" coveredstatements="1" conditionals="31" coveredconditionals="0" methods="24" coveredmethods="0"/>
-        <file name="Scroll.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/Scroll.js">
-          <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-        </file>
+        <metrics statements="72" coveredstatements="17" conditionals="31" coveredconditionals="8" methods="23" coveredmethods="2"/>
         <file name="actions.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/actions.js">
           <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -22,11 +16,11 @@
           <line num="16" count="0" type="stmt"/>
         </file>
         <file name="constants.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/constants.js">
-          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
         </file>
         <file name="index.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/index.js">
           <metrics statements="16" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -48,20 +42,19 @@
           <line num="21" count="0" type="stmt"/>
         </file>
         <file name="reducers.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/reducers.js">
-          <metrics statements="13" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="26" count="0" type="stmt"/>
-          <line num="28" count="0" type="stmt"/>
-          <line num="30" count="0" type="stmt"/>
-          <line num="32" count="0" type="stmt"/>
-          <line num="34" count="0" type="stmt"/>
+          <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="8" methods="2" coveredmethods="2"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="25" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="26" count="4" type="cond" truecount="4" falsecount="0"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="30" count="1" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
         </file>
         <file name="registerServiceWorker.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/registerServiceWorker.js">
           <metrics statements="31" coveredstatements="0" conditionals="21" coveredconditionals="0" methods="15" coveredmethods="0"/>
@@ -99,11 +92,11 @@
         </file>
         <file name="setupTests.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/setupTests.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="4" count="4" type="stmt"/>
+          <line num="4" count="9" type="stmt"/>
         </file>
       </package>
       <package name="src.components">
-        <metrics statements="22" coveredstatements="13" conditionals="4" coveredconditionals="1" methods="15" coveredmethods="8"/>
+        <metrics statements="22" coveredstatements="21" conditionals="4" coveredconditionals="3" methods="15" coveredmethods="15"/>
         <file name="Card.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Card.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="4" count="3" type="stmt"/>
@@ -126,26 +119,26 @@
           <line num="24" count="1" type="stmt"/>
         </file>
         <file name="ErrorBoundary.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/ErrorBoundary.js">
-          <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+          <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
         </file>
         <file name="Header.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Header.js">
-          <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
         </file>
         <file name="Scroll.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Scroll.js">
-          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
         </file>
         <file name="Searchbox.js" path="/Users/nicolasnollomont/Desktop/REMOTE-DEV/robofriends2/src/components/Searchbox.js">
-          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
         </file>
       </package>
       <package name="src.containers">
