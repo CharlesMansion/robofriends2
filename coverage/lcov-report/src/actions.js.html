@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">75% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/10</span>
+        <span class='fraction'>6/8</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,18 +30,18 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">60% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>3/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>4/6</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -59,45 +59,48 @@
 14
 15
 16
-17</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+17
+18</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { CHANGE_SEARCHFIELD, </span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { CHANGE_SEARCHFIELD, 
 		 REQUEST_ROBOTS_PENDING,
 		 REQUEST_ROBOTS_SUCCESS,
-		 REQUEST_ROBOTS_FAILED } from './constants.js'
+		 REQUEST_ROBOTS_FAILED } from './constants.js';
 &nbsp;
-export const setSearchfield = (<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >text) =&gt; (<span class="cstat-no" title="statement not covered" >{</span></span></span>
+import {ApiCall} from './api/ApiCall';
+&nbsp;
+export const setSearchfield = (text) =&gt; ({
 	type: CHANGE_SEARCHFIELD,
 	payload: text
 });
 &nbsp;
-export const requestRobots = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; (<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span>dispatch) =&gt; {</span></span></span>
-<span class="cstat-no" title="statement not covered" >	dispatch({type : REQUEST_ROBOTS_PENDING});</span>
-<span class="cstat-no" title="statement not covered" >	fetch('https://jsonplaceholder.typicode.com/users')</span>
-    .then(<span class="fstat-no" title="function not covered" >response</span> =&gt; <span class="cstat-no" title="statement not covered" >response.json())</span>
-    .then(<span class="fstat-no" title="function not covered" >data</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch({type : REQUEST_ROBOTS_SUCCESS, payload:data}))</span>
-    .catch(<span class="fstat-no" title="function not covered" >error</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch({type : REQUEST_ROBOTS_FAILED, payload:error}));</span>
+export const requestRobots = () =&gt; (dispatch) =&gt; {
+	dispatch({type : REQUEST_ROBOTS_PENDING});
+	ApiCall('https://jsonplaceholder.typicode.com/users')
+    .then(<span class="fstat-no" title="function not covered" >da</span>ta =&gt; <span class="cstat-no" title="statement not covered" >dispatch({type : REQUEST_ROBOTS_SUCCESS, payload:data}))</span>
+    .catch(<span class="fstat-no" title="function not covered" >er</span>ror =&gt; <span class="cstat-no" title="statement not covered" >dispatch({type : REQUEST_ROBOTS_FAILED, payload:error}))</span>;
 }</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 26 2019 16:21:32 GMT+0100 (CET)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 26 2019 21:21:12 GMT+0100 (CET)
 </div>
 </div>
 <script src="../prettify.js"></script>
