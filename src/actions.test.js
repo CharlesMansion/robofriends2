@@ -8,6 +8,8 @@ import * as actions from './actions';
 import configureMockStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
 
+import nock from 'nock';
+
 const mockStore = configureMockStore([thunkMiddleware])
 
 describe('testing the Searchfield action', () => {
@@ -22,14 +24,36 @@ describe('testing the Searchfield action', () => {
 })
 
 describe('testing the requestRobots action', () => {
-	it('should create an action to request robots', () => {
+	it('should create an action to request robots', (done) => {
+		beforeEach(() => {
+		nock('https://jsonplaceholder.typicode.com')
+			.get('/users')
+			.reply(200, {
+				name:'Don Corleone',
+				email: 'don@gmail.com',
+				id:13
+				})
+		})
+
 		const store = mockStore();
-		store.dispatch(actions.requestRobots())
+		return store.dispatch(actions.requestRobots())
 		const action = store.getActions();
-		console.log('store', store);
-		const expectedAction = {
+
+		const expectedAction0 = {
 			type: REQUEST_ROBOTS_PENDING,
 		}
-		expect(action[0]).toEqual(expectedAction);
+		expect(action[0]).toEqual(expectedAction0);
+
+		const expectedAction1 = {
+			type: REQUEST_ROBOTS_SUCCESS,
+			payload: {
+				name:'Don Corleone',
+				email: 'don@gmail.com',
+				id:13
+				}
+		}
+		expect(action[0]).toEqual(expectedAction1);
+		done();
+
 	})
 })

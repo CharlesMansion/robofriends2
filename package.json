@@ -10,6 +10,7 @@
     "braces": "^2.3.2",
     "gh-pages": "^2.0.1",
     "merge": "^1.2.1",
+    "nock": "^10.0.6",
     "react": "^16.4.2",
     "react-dev-utils": "^6.1.1",
     "react-dom": "^16.4.2",
